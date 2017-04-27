@@ -1,0 +1,20 @@
+{
+  "name": "gulp-stream-to-promise2",
+  "version": "1.0.0",
+  "description": "Returns a promise from a Gulpstream, plus (optionally) catches pipeline-breaking errors for Gulp v3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adam-lynch/gulp-stream-to-promise2.git"
+  },
+  "keywords": ["promise", "stream", "gulp", "error"],
+  "author": "Adam Lynch <contact@adamlynch.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adam-lynch/gulp-stream-to-promise2/issues"
+  },
+  "homepage": "https://github.com/adam-lynch/gulp-stream-to-promise2#readme"
+}
