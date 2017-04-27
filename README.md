@@ -17,7 +17,7 @@ You must pass a callback which returns a gulp stream. Your callback will get cal
 - `plumbErrors`: (Function) if used in your pipeline, any errors in following pipes won't kill your pipeline / file-watching. Uses [gulp-plumber](https://www.npmjs.com/package/gulp-plumber) under the hood.
 - `stopPlumbingErrors`: (Function) if you've used `plumbErrors`, you can use this function to resume default behaves for any following pipes.
 
-Note: None of these are needed if you're using Gulp v4+.
+Note: you don't need to call these plumbing functions if you're using Gulp v4+.
 
 `gulpStreamToPromise` will then return a Promise;
 
