@@ -14,8 +14,8 @@ npm install --save gulp-stream-to-promise2
 
 You must pass a callback which returns a gulp stream. Your callback will get called with two arguments;
 
-    - `plumbErrors`: (Function) if used in your pipeline, any errors in following pipes won't kill your pipeline / file-watching. Uses [gulp-plumber](https://www.npmjs.com/package/gulp-plumber) under the hood.
-    - `stopPlumbingErrors`: (Function) if you've used `plumbErrors`, you can use this function to resume default behaves for any following pipes.
+- `plumbErrors`: (Function) if used in your pipeline, any errors in following pipes won't kill your pipeline / file-watching. Uses [gulp-plumber](https://www.npmjs.com/package/gulp-plumber) under the hood.
+- `stopPlumbingErrors`: (Function) if you've used `plumbErrors`, you can use this function to resume default behaves for any following pipes.
 
 Note: None of these are needed if you're using Gulp v4+.
 
