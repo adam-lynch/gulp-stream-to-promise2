@@ -1,7 +1,7 @@
 {
   "name": "gulp-stream-to-promise2",
   "version": "1.0.0",
-  "description": "Returns a promise from a Gulpstream, plus (optionally) catches pipeline-breaking errors for Gulp v3",
+  "description": "Returns a promise from a Gulp stream, plus (optionally) catches pipeline-breaking errors for Gulp v3",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
