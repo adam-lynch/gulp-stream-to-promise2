@@ -12,7 +12,30 @@ npm install --save gulp-stream-to-promise2
 
 ## Usage
 
-You must pass a callback which returns a gulp stream. Your callback will get called with two arguments;
+
+### Passing a stream
+
+If passed a Gulp stream, `gulpStreamToPromise` will then return a Promise;
+
+```javascript
+/* ... */
+var gulpStreamToPromise = require('gulp-stream-to-promise2');
+
+gulp.task('default', function(){
+    var stream = gulp.src( /* ... */ )
+        .pipe(examplePlugin())
+        .pipe(anotherExamplePlugin());
+
+    return gulpStreamToPromise(stream)
+        .then(function(){ /* success */ })
+        .catch(function(err){ /* error */ });
+});
+```
+
+
+### Passing a callback function
+
+If you choose to pass a callback, it must return a gulp stream. Your callback will get called with two arguments;
 
 - `plumbErrors`: (Function) if used in your pipeline, any errors in following pipes won't kill your pipeline / file-watching. Uses [gulp-plumber](https://www.npmjs.com/package/gulp-plumber) under the hood.
 - `stopPlumbingErrors`: (Function) if you've used `plumbErrors`, you can use this function to resume default behaves for any following pipes.

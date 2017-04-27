@@ -1,8 +1,10 @@
 var plumber = require('gulp-plumber');
 
-// @param {Function} callback - This must return the gulp stream.
-//  @returns {Promise}
-module.exports = function(callback){
+// @param {Object|Function} mixed - This must return the gulp stream.
+// @returns {Promise}
+module.exports = function(mixed){
+    var callback = typeof mixed === 'function' && mixed || function(){ return mixed; };
+    
     return new Promise(function(resolve, reject){
         callback(function(){ plumber({ errorHandler: reject }) }, plumber.stop)
         .on('error', reject)
