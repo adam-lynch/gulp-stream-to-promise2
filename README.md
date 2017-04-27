@@ -19,6 +19,8 @@ You must pass a callback which returns a gulp stream. Your callback will get cal
 
 Note: None of these are needed if you're using Gulp v4+.
 
+`gulpStreamToPromise` will then return a Promise;
+
 ```javascript
 /* ... */
 var gulpStreamToPromise = require('gulp-stream-to-promise2');
