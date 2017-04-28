@@ -6,7 +6,7 @@ module.exports = function(mixed){
     var callback = typeof mixed === 'function' && mixed || function(){ return mixed; };
     
     return new Promise(function(resolve, reject){
-        callback(function(){ plumber({ errorHandler: reject }) }, plumber.stop)
+        callback(function(){ return plumber({ errorHandler: reject }) }, plumber.stop)
         .on('error', reject)
         .on('finish', resolve);
     });

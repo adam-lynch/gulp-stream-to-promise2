@@ -1,6 +1,6 @@
 {
   "name": "gulp-stream-to-promise2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Returns a promise from a Gulp stream, plus (optionally) catches pipeline-breaking errors for Gulp v3",
   "main": "index.js",
   "scripts": {
